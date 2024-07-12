@@ -1,6 +1,6 @@
 # Pregnancy and postpartum dynamics revealed by millions of lab tests
 
-https://doi.org/10.5061/dryad.1c59zw44t
+<!--https://doi.org/10.5061/dryad.1c59zw44t-->
 
 
 The dataset contains summary statistics on lab tests from >300K pregnancies is Israel in the period 2003-2020 who are members of "Clalit Healthcare", Israel's largest HMO.\
@@ -12,7 +12,7 @@ These test results are also included in the ungrouped dataset.
 In addition, the dataset contains the same information for 3 common complications: Postpartum hemorrhage (PPH), gestational diabetes mellitus (GDM) and pre-eclampsia.\
 The dataset of these pregnancies is brought at a 4-week resolution due to a lower number of measurements.
 
-See _Methods_ for more details on dataset curation.
+See [_Methods_](#methods) for more details on dataset curation.
 
 
 # Description of the data and file structure
@@ -51,7 +51,7 @@ The dataset consists of CSV files in the following structure:
 Each CSV file has the following structure:
 | week     | val_n | val_mean  | val_sd    | val_5       | val_10      | val_25      | val_50      | val_75     | val_90      | val_95      | qval_mean | qval_sd   | qval_5    | qval_10   | qval_25   | qval_50   | qval_75   | qval_90   | qval_95   | &#8230; |bmi_n       |&#8230;|
 |----------|-------|-----------|-----------|-------------|-------------|-------------|-------------|------------|-------------|-------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-|-------------|-|
-| [-60,-56)| 4668  | 4.274635  | 0.356050  | 3.700000048 | 3.900000095 | 4.099999905 | 4.300000191 | 4.5        | 4.699999809 | 4.800000191 | 0.517748  | 0.300543  | 0.035977  | 0.081233  | 0.279392  | 0.554869  | 0.793191  | 0.924205  | 0.962102  |&#8230;|1376|&#8230;|
+| \[-60,-56\)| 4668  | 4.274635  | 0.356050  | 3.700000048 | 3.900000095 | 4.099999905 | 4.300000191 | 4.5        | 4.699999809 | 4.800000191 | 0.517748  | 0.300543  | 0.035977  | 0.081233  | 0.279392  | 0.554869  | 0.793191  | 0.924205  | 0.962102  |&#8230;|1376|&#8230;|
 
 \*First row from ```pregnancy.4w/Albumin.csv```
 
@@ -67,13 +67,43 @@ Where:
 Other columns (not shown) are age and BMI columns with the same summary statistics. 
 
 
+# Methods
+## Study Population
+
+The study population consisted of individuals from the Clalit healthcare database, Israel's largest health maintenance organization (HMO). We considered all pregnancies of females aged 20 to 35 between 2003 and 2020. Information about pregnancies before 2003 is not available. We estimated the fraction of first pregnancies for the years 2010-2020 to reduce the influence of first pregnancies before 2003 which we cannot account for. For more information, see “stats.csv”.
+
+## Data Collection
+
+Medical records were pseudonymized by hashing of personal identifiers and randomization of dates by a random number of weeks uniformly sampled between 0 and 13 weeks for each patient and adding it to all dates in the patient diagnoses, laboratory, and medication records. This randomization does not affect timing relative to delivery.
+
+We examined the timeframe of 60 weeks before delivery to 80 weeks after delivery for all documented labors within our study population. 0 is denoted as week of delivery. We identified deliveries by ICD9 code V27 and confirmed a childbirth record for the individual. We excluded preterm deliveries (<37 weeks, ICD9 code 644) stillbirths and labors with more than one newborn. Nonetheless, 12% of deliveries were found to be <37 weeks and missing the 644 code.
+
+To mitigate ascertainment bias of the test results, for each test, we removed data from individuals with chronic disease that affects the test if the onset of the disease was up to 6 months after the test. We also removed data from individuals who purchased drugs which affected the tests in the 6 months before the tests. Chronic diseases are defined as non-pediatric ICD9 codes with a Kaplan−Meyer survival drop of >10% over 5 years and are assigned above a minimal average drop of 1/3 per y. Drugs that affect a test were defined as drugs with significant effect on the test (false discovery rate < 0.01). This step allowed us to focus on a relatively healthy subset of the pregnant population, reducing the confounding effects associated with specific health conditions listed above or medication usage. 
+
+ 
+
+To exclude the potential effect of follow-up pregnancies in the 80 weeks following delivery, we excluded lab values from individuals with another delivery within 40 weeks following the measurement.
+
+For each pregnancy, we gathered all available test values including standard blood count, kidney and liver function tests, blood coagulation tests, lipid panel, inflammation markers and hormones. We then discretized test values into time points relative to the time of birth in weekly intervals for each test. In addition to test values, we also extracted data on patients including age (at measurement, mean and interquartile range) and BMI (the most proximal BMI measurement in medical records outside pregnancy, mean and interquartile range, if available).
+
+
+# Running the notebooks
+
+Jupyter notebook was used to run the analyses and to create the graphs. To re-run, [install anaconda or miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) and download the repository.
+Open the command prompt/terminal in the `src` directory of the repository and install the envinment:
+```
+conda env create -f environment.yml
+```
+Start the conda environment and the jupyter server:
+```
+conda activate pregnancy
+jupyter notebook
+```
+And run the notebooks from the new browser window. For support regarding running Jupyter notebooks, please refer to [Jupyter's support page](https://docs.jupyter.org/en/latest/running.html).
 
 
 
 # Sharing/Access information
-
-Dataset and Juptyer notebooks for analysis are available on GitHub:\
-[![GitHub](https://img.icons8.com/ios-glyphs/30/000000/github.png)Pregnancy and postpartum dynamics revealed by millions of lab tests](https://github.com/AlonLabWIS/PregnancyMillions)
 
 
 Data was derived from the following sources:

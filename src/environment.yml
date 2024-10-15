@@ -18,10 +18,10 @@ dependencies:
   - brotli-bin=1.1.0=hcfcfb64_1
   - brotli-python=1.1.0=py39h99910a6_1
   - bzip2=1.0.8=hcfcfb64_5
-  - ca-certificates=2024.7.4=h56e8100_0
+  - ca-certificates=2024.8.30=h56e8100_0
   - cached-property=1.5.2=hd8ed1ab_1
   - cached_property=1.5.2=pyha770c72_1
-  - certifi=2024.7.4=pyhd8ed1ab_0
+  - certifi=2024.8.30=pyhd8ed1ab_0
   - cffi=1.16.0=py39ha55989b_0
   - charset-normalizer=3.3.2=pyhd8ed1ab_0
   - colorama=0.4.6=pyhd8ed1ab_0
@@ -38,6 +38,7 @@ dependencies:
   - ecos=2.0.14=py39h4b0a98a_0
   - eigen=3.4.0=h91493d7_0
   - entrypoints=0.4=pyhd8ed1ab_0
+  - et_xmlfile=1.1.0=pyhd8ed1ab_0
   - exceptiongroup=1.2.0=pyhd8ed1ab_2
   - executing=2.0.1=pyhd8ed1ab_0
   - fftw=3.3.10=nompi_h89e6982_110
@@ -143,7 +144,8 @@ dependencies:
   - notebook-shim=0.2.4=pyhd8ed1ab_0
   - numpy=2.0.0=py39h60232e0_0
   - openjpeg=2.5.2=h3d672ee_0
-  - openssl=3.3.1=h2466b09_1
+  - openpyxl=3.1.5=py39ha55989b_1
+  - openssl=3.3.2=h2466b09_0
   - osqp=0.6.7.post0=py39h2366fc2_0
   - overrides=7.7.0=pyhd8ed1ab_0
   - packaging=24.1=pyhd8ed1ab_0

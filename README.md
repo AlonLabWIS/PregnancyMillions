@@ -1,6 +1,8 @@
 # Pregnancy and postpartum dynamics revealed by millions of lab tests
 
 <!--https://doi.org/10.5061/dryad.1c59zw44t-->
+[![DOI](https://zenodo.org/badge/822709739.svg)](https://doi.org/10.5281/zenodo.13996864)
+
 
 
 The dataset contains summary statistics on lab tests from >300K pregnancies is Israel in the period 2003-2020 who are members of "Clalit Healthcare", Israel's largest HMO.\

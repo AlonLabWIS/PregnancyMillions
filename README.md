@@ -43,9 +43,9 @@ The dataset consists of CSV files in the following structure:
             - ⋮
         - stats.csv  # Metadata on each lab test: number of pregnancies, first pregnancies, c-section fraction etc.
         - complications.csv  # Number of pregnancies per complication
-        - non_healthy_icd_and_cohort.csv  # A list of all medical diagnosis precluded from the dataset
-    - Metadata.xlsx  # Table of units and test names
-    - LabNorm.csv  # Reference values from a healthy, non-pregnant female population.
+        - excluded_icd9_codes.csv  # ICD9 codes of all medical diagnoses exlcuded, "Chronic disease" as discussed in the methods.
+        - Metadata.xlsx  # Table of units and test names
+        - LabNorm.csv  # Reference values from a healthy, non-pregnant female population.
 ```
 
 Each CSV file has the following structure:
@@ -60,12 +60,17 @@ Where:
 * val_n: Number of lab tests in the weekly interval.
 * val_mean: The mean of all tests values in the interval. Units are industry standard and be found in `Metadata.xlsx`
 * val_sd: Standard deviation of the test values in the interval.
-* val_(5&#183;&#183;&#183;95) - The (5&#183;&#183;&#183;95)th percentiles of the test values in the interval, the 50th percentile being the median.
+* val_(5&#183;&#183;&#183;95) - The (5&#183;&#183;&#183;95)<sup>th</sup> percentiles of the test values in the interval, the 50<sup>th</sup> percentile being the median.
 * qval columns: Same as the above for the quantile score of the test results in the interval.
 * bmi_n: Number of test results which had a valid BMI measurement.
 
 Other columns (not shown) are age and BMI columns with the same summary statistics. 
 
+The file `stats.csv` provides some metadata statistics about the dataset:
+
+* `gw_X` column names are the `X`<sup>th</sup> percentile of delivery time, unit is gestational week.
+* Fraction of first pregnancies was calculated based on the records after 2010 only, since pregnancies before 2002 are not included and therefore we cannot know about earlier pregnancies.
+* Preterm pregnancies are those with deliver at or before the 37<sup>th</sup> gestational week.
 
 # Methods
 ## Study Population
@@ -76,7 +81,7 @@ The study population consisted of individuals from the Clalit healthcare databas
 
 Medical records were pseudonymized by hashing of personal identifiers and randomization of dates by a random number of weeks uniformly sampled between 0 and 13 weeks for each patient and adding it to all dates in the patient diagnoses, laboratory, and medication records. This randomization does not affect timing relative to delivery.
 
-We examined the timeframe of 60 weeks before delivery to 80 weeks after delivery for all documented labors within our study population. 0 is denoted as week of delivery. We identified deliveries by ICD9 code V27 and confirmed a childbirth record for the individual. We excluded preterm deliveries (<37 weeks, ICD9 code 644) stillbirths and labors with more than one newborn. Nonetheless, 12% of deliveries were found to be <37 weeks and missing the 644 code.
+We examined the timeframe of 60 weeks before delivery to 80 weeks after delivery for all documented labors within our study population. 0 is denoted as week of delivery. We identified deliveries by ICD9 code V27 and confirmed a childbirth record for the individual. We excluded preterm deliveries (≤37 weeks, ICD9 code 644) stillbirths and labors with more than one newborn. Nonetheless, 12% of deliveries were found to be ≤37 weeks and missing the 644 code.
 
 To mitigate ascertainment bias of the test results, for each test, we removed data from individuals with chronic disease that affects the test if the onset of the disease was up to 6 months after the test. We also removed data from individuals who purchased drugs which affected the tests in the 6 months before the tests. Chronic diseases are defined as non-pediatric ICD9 codes with a Kaplan−Meyer survival drop of >10% over 5 years and are assigned above a minimal average drop of 1/3 per y. Drugs that affect a test were defined as drugs with significant effect on the test (false discovery rate < 0.01). This step allowed us to focus on a relatively healthy subset of the pregnant population, reducing the confounding effects associated with specific health conditions listed above or medication usage. 
 

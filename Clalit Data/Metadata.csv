@@ -1,0 +1,116 @@
+﻿Test,Nice name,Short name,LabNorm name,Group,Subgroup main,Subgroup SI,units
+17_HYDROXY_PROGESTERONE,17α-OHP,17α-OHP,,Endocrine,,Endocrine III,
+ACTH_ADRENOCORTICOTROPIC_HORMONE,ACTH,ACTH,,Endocrine,,Endocrine III,
+ALBUMIN,Albumin,Alb,Albumin,Liver,Liver,Liver,g/dL
+ALDOSTERONE_BLOOD,Aldosterone,ALD,,Endocrine,,Endocrine III,
+ALT_Alanine_aminotransferase_GPT,ALT,ALT,ALT,Liver,Liver,Liver,units/L
+AMYLASE_BLOOD,Amylase,AMYL,Amylase,Metabolism,Metabolism,Metabolism,units/L
+ANDROSTENEDIONE,AND,AND,,Endocrine,,Endocrine III,
+ANGIOTENSIN_I_CONVERTING_ENZYME,ACE,ACE,,Endocrine,,Endocrine III,
+APTT_R,APTT-R,APTT-R,"aPTT, ratio",Coagulation,,Coagulation,
+APTT_sec,APTT-sec,APTT-sec,"aPTT, sec",Coagulation,Coagulation,Coagulation,seconds
+AST_Aspartate_aminotransferase_GOT,AST,AST,AST,Liver,Liver,Liver,units/L
+BASO_perc,Basophils %,Baso %,"Basophils, %",Immune,,Immune II,
+BASOPHILES_abs,Basophiles,Baso,"Basophils, Abs",Immune,Immune I,Immune I,
+BILIRUBIN_DIRECT,Bilirubin(dir),BILID,Direct Bilirubin,Liver,,Liver,mg/dl
+BILIRUBIN_INDIRECT,Bilirubin(indir),BILII,Indirect Bilirubin,Liver,,Liver,mg/dl
+BILIRUBIN_TOTAL,Bilirubin(tot),BILIT,Total Bilirubin,Liver,Liver,Liver,mg/dl
+BMI,BMI,BMI,BMI,Metabolism,Metabolism,Metabolism,kg/m2
+BPd,BP (Diastolic),DBP,"Blood Pressure, Diastolic",Renal,Renal II,Renal II,mmHg
+BPs,BP (Systolic),SBP,"Blood Pressure, Systolic",Renal,Renal II,Renal II,mmHg
+C_REACTIVE_PROTEIN_CRP,CRP,CRP,CRP,Immune,Immune II,Immune III,mg/dL
+CALCIUM_BLOOD,Calcium,Ca,Calcium,Musculoskeletal,Musculoskeletal,Musculoskeletal,mg/dL
+CH,CH,CH,CH,RBCs,,RBCs II,
+CHOLESTEROL,Cholesterol,TC,Total Cholesterol,Metabolism,Metabolism,Metabolism,
+CHOLESTEROL_HDL,HDL,HDL,HDL Cholesterol,Metabolism,,Metabolism,
+CHOLESTEROL_HDL_RATIO,HDL ratio,HDL ratio,Total:HDL,Metabolism,Metabolism,Metabolism,
+CHOLESTEROL_LDL,LDL,LDL,LDL Cholesterol,Metabolism,,Metabolism,
+CK_CREAT,Creatine kinase,CK,CPK,Musculoskeletal,Musculoskeletal,Musculoskeletal,
+Cl,Chloride,Cl,Chloride,Renal,Renal I,Renal I,
+CORTISOL_BLOOD,Cortisol,Cort,,Endocrine,,Endocrine III,
+CORTISOL_U_FREE_24h,Cortisol urine 24h,Cort u24h,,Endocrine,,Endocrine III,
+CORTISOL_U_FREE_SAMP,Cortisol urine,Cort  u,,Endocrine,,Endocrine III,
+CREATININE_BLOOD,Creatinine(blood),SCr,Creatinine,Renal,Renal I,Renal I,mg/dL
+CREATININE_URINE_SAMPLE,Creatinine(urine),UCr,Urine Creatinine,Renal,Renal II,Renal II,
+DHEA_SULPHATE,DHEA-S,DHEA-S,,Endocrine,,Endocrine III,
+EOS,Eosinophils,EOS,"Eosinophils, Abs",Immune,Immune I,Immune I,K cells/microL
+EOS_perc,Eosinophils %,EOS %,"Eosinophils, %",Immune,,Immune II,
+ESTRADIOL_E_2,Estradiol,E2,Estradiol,Endocrine,,Endocrine I,pmol/L
+FERRITIN,Ferritin,FER,Ferritin,RBCs,RBCs II,RBCs II,ng/ml
+FIBRINOGEN,Fibrinogen,Fgn,Fibrinogen,Coagulation,Coagulation,Coagulation,mg/dL
+FOLIC_ACID,Folic acid,FA,Folic Acid,RBCs,RBCs I,RBCs I,nmol/L<ff>
+FSH_FOLLICLE_STIMULATING_HORMONE,FSH,FSH,,Endocrine,,Endocrine I,
+GAMMA_GLUTAMYL_TRANSPEPTIDASE,GGT,GGT,GGT,Liver,Liver,Liver,
+GLOBULIN,Globulin,GLB,Total Globulin,Liver,Liver,Liver,g/dL
+GLUCOSE_BLOOD,Glucose,Glucose,Glucose,Metabolism,Metabolism,Metabolism,mg/dL
+GROWTH_HORMONE_GH,Growth Hormone,GH,,Endocrine,,Endocrine II,
+HCT,Hematocrit,Hct,Hematocrit,RBCs,,RBCs II,percent
+HCT_HGB_RATIO,Hct/Hgb,Hct/Hgb,Hematocrit:Hemoglobin,RBCs,RBCs I,RBCs I,
+HDW,HDW,HDW,HDW,RBCs,RBCs II,RBCs II,
+HEMOGLOBIN_A1C_CALCULATED,HbA1c,HbA1c,Hemoglobin A1c,Metabolism,Metabolism,Metabolism,percent
+HGB,Hemoglobin,Hgb,Hemoglobin,RBCs,RBCs II,RBCs II,g/dL
+HYPERperc,Hyperchromic %,Hyper %,Hyperchromic,RBCs,,RBCs III,
+HYPO_perc,Hypochromic %,Hypo %,Hypochromic,RBCs,,RBCs III,
+INSULIN,Insulin,Insulin,,Metabolism,,Metabolism,
+INSULIN_LIKE_GROWTH_FACTOR_1,IGF-1,IGF-1,,Endocrine,,Endocrine II,
+IRON,Iron,Iron,Iron,RBCs,RBCs II,RBCs II,microg/dL
+K,Potassium,K,Potassium,Renal,Renal I,Renal I,mEq/L
+LACTIC_DEHYDROGENASE_LDH__BLOOD,LDH,LDH,LDH,Musculoskeletal,Musculoskeletal,Musculoskeletal,units/L
+LH_LUTEINIZING_HORMONE,LH,LH,LH,Endocrine,,Endocrine I,units/L
+LUC,Large unstained cells,LUC,"Large unstained cells, Abs",Immune,Immune II,Immune III,
+LUCperc,Large unstained cells %,LUC %,"Large unstained cells, %",Immune,,Immune III,
+LYMP,Lymphocytes,LYMP,"Lymphocytes, Abs",Immune,Immune I,Immune I,K cells/microL
+LYMperc,Lymphocytes %,LYMP %,"Lymphocytes, %",Immune,,Immune II,
+M,Microalbumin/Creatinine ,ACR,Microalbumin:Creatinine,Renal,Renal II,Renal II,
+MACROperc,Macrocytic %,Macro %,Macrocytic,RBCs,,RBCs III,
+MAGNESIUM_BLOOD,Magnesium,Mg,Magnesium,Renal,Renal I,Renal I,mEq/L
+MCH,MCH,MCH,MCH,RBCs,RBCs II,RBCs II,
+MCHC,MCHC,MCHC,MCHC,RBCs,RBCs II,RBCs II,g/dl
+MCV,MCV,MCV,MCV,RBCs,RBCs I,RBCs I,pg/cell
+MICR_perc,Microcytic %,MICR %,Microcytic,RBCs,,RBCs III,
+MICROALBU_U_SAMP,Microalbumin urine 24h,UMA,Urine Microalbumin,Renal,Renal II,Renal II,
+MICROperc_HYPOperc,Microcytic/Hypochromic,Micro:Hypo,Microcytic:Hypochromic,RBCs,,RBCs III,
+MONO,Monocytes,MONO,"Monocytes, Abs",Immune,Immune I,Immune I,
+MONperc,Monocytes %,MONO %,"Monocytes, %",Immune,,Immune II,
+MPV,MPV,MPV,MPV,Coagulation,Coagulation,Coagulation,
+MPXI,MPXI,MPXI,MPXI,Immune,Immune II,Immune III,
+Na,Sodium,Na,Sodium,Renal,Renal I,Renal I,mEq/L
+NEUT,Neutrophils,NEUT,"Neutrophils, Abs",Immune,Immune I,Immune I,1000/microL
+NEUTperc,Neutrophils %,NEUT %,"Neutrophils, %",Immune,,Immune II,
+NON_HDL_CHOLESTEROL,Non-HDL Cholesterol,Non-HDL ,Non-HDL,Metabolism,,Metabolism,
+PARATHYROID_HORMONE_PTH,PTH,PTH,,Musculoskeletal,,Musculoskeletal,
+PCT,Procalcitonin,PCT,PCT,Immune,Immune II,Immune III,
+PDW,PDW,PDW,PDW,Coagulation,Coagulation,Coagulation,
+PH_u,Urine pH,pH U,Urine pH,Renal,Renal I,Renal I,
+PHOSPHATASE_ALKALINE,ALP,ALP,Alk. Phosphatase,Musculoskeletal,Musculoskeletal,Musculoskeletal,units/L
+PHOSPHORUS_BLOOD,Phosphorus,P,Phosphorus,Musculoskeletal,Musculoskeletal,Musculoskeletal,mg/dL
+PLT,Platelets,PLT,Platelets,Coagulation,Coagulation,Coagulation,K/microL
+POTASSIUM_BLOOD,Potassium,K,,Renal,Renal I,Renal I,
+PROGESTERONE,Progesterone,P4,,Endocrine,,Endocrine I,
+PROLACTIN,Prolactin,PRL,,Endocrine,,Endocrine II,
+PROTEIN_TOTAL_BLOOD,Total Protein,TP,Total Protein,Liver,,Liver,g/dL
+PSA_PROSTATIC_SPECIFIC_ANTIGEN,PSA,PSA,PSA,Endocrine,,Endocrine II,
+PT_INR,PT INR,PT-INR,"PT, INR",Coagulation,Coagulation,Coagulation,
+PT_perc,PT %,PT %,"PT, %",Coagulation,Coagulation,Coagulation,
+PT_SEC,PT sec,PT-sec,"PT, sec",Coagulation,Coagulation,Coagulation,
+RBC,RBC,RBC,RBC,RBCs,RBCs I,RBCs I,
+RBC_calculated_urine_strip,RBC u strip,RBC u strip,,Renal,,Renal II,
+RDW,RDW,RDW,RDW,RBCs,RBCs I,RBCs I,
+RDW_CV,RDW,RDW,RDW-CV,RBCs,,RBCs I,
+RDW_SD,RDW SD,RDW SD,RDW-SD,RBCs,,RBCs I,
+SEDIMENTATION_RATE,Sedimentation rate,Sed Rate,ESR,Immune,Immune II,Immune III,mm/hour
+SODIUM_BLOOD,Sodium,Na,,Renal,Renal I,Renal I,
+SPECIFIC_GRAVITY,Spec gravity,SG,Urine Specific Gravity,Renal,Renal I,Renal I,
+T3_FREE,Free T3,FT3,"T3, Free",Endocrine,Endocrine,Endocrine I,pmol/L
+T3_TOTAL,Total T3,TT3,,Endocrine,,Endocrine I,
+T4_FREE,Free T4,FT4,"T4, Free",Endocrine,Endocrine,Endocrine I,pmol/L
+TESTOSTERONE_TOTAL,Testosterone,T,,Endocrine,,Endocrine II,
+THYROGLOBULIN,Thyroglobulin,Tg,,Endocrine,,Endocrine I,
+TRANSFERRIN,Transferrin,TRSF,Transferrin,RBCs,RBCs II,RBCs II,mg/dL
+TRIGLYCERIDES,Triglycerides,TGs,Triglycerides,Metabolism,Metabolism,Metabolism,
+TSH_THYROID_STIMULATING_HORMONE,TSH,TSH,TSH,Endocrine,Endocrine,Endocrine I,
+UREA_BLOOD,Urea,Urea,Urea,Renal,Renal I,Renal I,
+URIC_ACID_BLOOD,Uric acid,Uric acid,Uric Acid,Renal,Renal I,Renal I,mg/dl
+VITAMIN_B12,Vitamin B12,VitB12,Vitamin B12,RBCs,RBCs I,RBCs I,
+VITAMIN_D3_25_0H_RIA,Vitamin D3,VitD3,Vitamin D (25-OH),Musculoskeletal,Musculoskeletal,Musculoskeletal,
+WBC,WBC,WBC,WBC,Immune,Immune I,Immune I,
